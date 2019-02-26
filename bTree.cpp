@@ -29,7 +29,7 @@ void delTree(tNode **tree)
 		delTree(&((*tree)->right));
 		free(*tree);
 	}
-	*tree = NULL;   //обнуляем адрес узла
+	*tree = NULL; 
 }
 
 //traverses
