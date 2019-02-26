@@ -1,5 +1,8 @@
 #pragma once
-#include"headers.h"
+#include<stdlib.h>
+#include<stdio.h>
+#include<string.h>
+#include<ctype.h>
 #include"dlist.h"
 typedef struct tNode {
 	char word[20];
@@ -12,7 +15,7 @@ typedef struct tNode {
 void createTree(tNode **);
 tNode* addNode(tNode*, char*);
 void delTree(tNode**);
-void preOrderT(tNode*);    //прямой
-void inOrderT(tNode*);     //симметричный
-void postOrderT(tNode*);   //в обратном порядке
-void breadthFirst(tNode*); //в ширину
+void preOrderT(tNode*);    //ГЇГ°ГїГ¬Г®Г©
+void inOrderT(tNode*);     //Г±ГЁГ¬Г¬ГҐГІГ°ГЁГ·Г­Г»Г©
+void postOrderT(tNode*);   //Гў Г®ГЎГ°Г ГІГ­Г®Г¬ ГЇГ®Г°ГїГ¤ГЄГҐ
+void breadthFirst(tNode*); //Гў ГёГЁГ°ГЁГ­Гі
