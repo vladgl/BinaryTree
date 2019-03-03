@@ -93,7 +93,7 @@ void* popBack(dList *list)
 	}
 	return NULL;
 }
-Node *getNth(dList *list, int n)  //нумерация элементов списка начинается с нуля!
+Node *getNth(dList *list, int n)  
 {
 	Node *tmp = list->head;
 
@@ -107,7 +107,7 @@ Node *getNth(dList *list, int n)  //нумерация элементов списка начинается с нуля
 	return tmp;
 }
 
-void insert(dList* list, int n, void *node)   //вставка на n-ую позицию (то есть, перед элементом с номером n при нумерации с 0)
+void insert(dList* list, int n, void *node)
 {
 	Node *tmp = getNth(list, n);
 	Node *lnode = (Node*)malloc(sizeof(Node));
@@ -135,7 +135,7 @@ void insert(dList* list, int n, void *node)   //вставка на n-ую позицию (то есть
 }
 
 
-void deleteNth(dList* list, int n)  //нумерация с 0!
+void deleteNth(dList* list, int n)  //Г­ГіГ¬ГҐГ°Г Г¶ГЁГї Г± 0!
 {
 	Node *tmp = getNth(list, n);
 
